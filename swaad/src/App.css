@@ -1,38 +1,1218 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+  color: #333;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-top: 80px;
+  color: #333;
+  text-transform: uppercase;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.section-description {
+  font-size: 16px;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto 60px auto;
+  line-height: 1.8;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Header Styles */
+.header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky; /* Make header sticky */
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.header nav ul li {
+  margin-left: 30px;
+}
+
+.header nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* This makes the link green when you hover over it */
+.header nav ul li a:hover {
+  color: #4CAF50;
+}
+
+/* This makes ONLY the currently active page's link green */
+.header nav ul li a.active {
+  color: #4CAF50;
+  border-bottom: 2px solid #4CAF50; /* Optional: adds an underline */
+  padding-bottom: 5px; /* Optional: adds some space for the underline */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.logo .logo-icon {
+  color: #4CAF50; /* Green color */
+  margin-right: 8px; /* Space between icon and text */
+  font-size: 22px; /* Slightly larger icon */
+}
+
+.logo1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #4CAF50; /* Green color */
+}
+
+/* Container for the new cart and profile icons */
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 25px; /* Space between the icons */
+}
+
+/* General style for the icon links */
+.icon-link {
+  color: #333; /* Icon color */
+  font-size: 20px; /* Icon size */
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Change color on hover */
+.icon-link:hover {
+  color: #4CAF50; /* Green hover color */
+}
+
+/* Hero Section Styles */
+.hero {
+  /* background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1770&q=80') no-repeat center center/cover; */
+  background: url('https://images.pexels.com/photos/678414/pexels-photo-678414.jpeg') no-repeat center center/cover;
+  padding: 180px 20px;
+  text-align: left;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  margin-left: 10%;
+  text-align: left;
+}
+
+.hero-content h1 {
+  font-size: 60px;
+  color: #fff;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.hero-content p {
+  color: #eee;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.hero-buttons .btn-get-started {
+  padding: 15px 30px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.hero-buttons .btn-learn-more {
+  padding: 15px 30px;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* About Section Styles */
+.about-section {
+  background-color: #4CAF50;
+  padding: 80px 50px;
+  color: #fff;
+}
+
+.about-card-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-card {
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.about-card .icon img {
+  width: 60px;
+  height: 60px;
+  filter: invert(1);
+}
+
+.about-card h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+/* Menu Section Styles */
+.menu-section {
+  padding: 80px 50px;
+  background-color: #f8f8f8;
+}
+
+.menu-items-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.menu-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  padding: 30px;
+  flex: 1;
+}
+
+.menu-item-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto 25px auto;
+  border: 5px solid #eee;
+}
+
+.menu-item h4 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.get-menu-btn {
+  padding: 12px 25px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Occasion Section Styles */
+.occasion-section {
+  padding: 80px 50px;
+  background-color: #fff;
+}
+
+.occasion-cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.occasion-card {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.occasion-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.occasion-text-content {
+  background-color: #fff;
+  padding: 30px;
+  text-align: left;
+}
+
+.occasion-text-content h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+/* Testimonial Section Styles */
+.testimonial-section {
+  padding: 80px 50px;
+  background-color: #f8f8f8;
+}
+
+.testimonial-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  padding: 40px;
+  flex: 1;
+  position: relative;
+}
+
+.quote-icon {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  font-size: 80px;
+  color: rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.testimonial-quote {
+  font-style: italic;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.testimonial-name {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.testimonial-role {
+  font-size: 14px;
+  color: #777;
+}
+
+/* New Footer Styles */
+.new-footer {
+  background-color: #1a1a1a;
+  color: #bbb;
+  padding: 60px 50px 0; /* Add padding, no bottom padding yet */
+  text-align: left;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  padding-bottom: 40px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 220px; /* Minimum width for sections */
+  margin-bottom: 20px;
+}
+
+/* Brand Section Specifics */
+.brand-section .logo {
+  color: #fff; /* White logo in footer */
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+.brand-section p {
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Styling for lists and links */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 12px;
+}
+
+.footer-section ul li a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #4CAF50; /* Green hover for links */
+  padding-left: 5px; /* Slight indent on hover */
+}
+
+/* Contact Info List */
+.contact-info li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.contact-info svg {
+  color: #4CAF50; /* Green icons */
+  font-size: 16px;
+  margin-right: 15px;
+  width: 20px; /* Fixed width for alignment */
+}
+
+.contact-info span {
+  font-size: 14px;
+}
+
+/* Working Hours */
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* Social Media Icons */
+.socials {
+  display: flex;
+  gap: 15px;
+}
+
+.socials a {
+  color: #bbb;
+  font-size: 18px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #444;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.socials a:hover {
+  color: #fff;
+  background-color: #4CAF50;
+  border-color: #4CAF50;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Footer Bottom Bar */
+.footer-bottom {
+  border-top: 1px solid #444;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+  color: #888;
+}
+
+/* Basic Responsiveness */
+@media (max-width: 992px) {
+  .about-card-container,
+  .menu-items-container,
+  .testimonial-cards-container,
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+  .occasion-cards-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+
+/* About Page Styles */
+
+/* 1. Hero Section for About Page */
+.about-hero {
+  background: url('https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg') no-repeat center center/cover;
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.about-hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6); /* Darker overlay for readability */
+  z-index: 1;
+}
+
+.about-hero .hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-hero h1 {
+  font-size: 52px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.about-text-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  text-align: left;
+}
+
+.text-box {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  border-radius: 8px;
+  flex: 1;
+  border-left: 4px solid #4CAF50;
+}
+
+.text-box h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.text-box p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #eee;
+}
+
+/* 2. Statistics Section */
+.stats-section {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f4f4f4;
+  padding: 60px 50px;
+  text-align: center;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-number {
+  font-size: 48px;
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+.stat-label {
+  font-size: 18px;
+  color: #333;
+  margin-top: 5px;
+}
+
+/* 3. Team Sections (Chefs & Founders) */
+.team-section {
+  padding: 80px 50px;
+  background-color: #fff;
+}
+
+/* Specific styling for founders section to have a different background */
+.founders-section {
+    background-color: #f8f8f8;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns for chefs */
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Specific grid for 2 founders */
+.founder-grid {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 800px; /* Make it narrower */
+}
+
+.team-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.team-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: top; /* Focus on the top of the image */
+}
+
+.team-info {
+  padding: 25px;
+}
+
+.team-info h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.team-info p {
+  font-size: 15px;
+  color: #777;
+  line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .founder-grid {
+    grid-template-columns: 1fr; /* Stack founders on smaller tablets */
+  }
+  .about-text-boxes {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .stats-section {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+
+/* Blog Page Styles */
+.blog-page {
+  background-color: #f8f9fa;
+}
+
+/* Featured Post Hero Section */
+.blog-hero {
+  position: relative;
+  padding: 120px 50px;
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.blog-hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 100%);
+  z-index: 1;
+}
+
+.blog-hero .hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  text-align: left;
+}
+
+.featured-tag {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.blog-hero h1 {
+  font-size: 48px;
+  margin: 20px 0;
+  line-height: 1.2;
+}
+
+.post-meta {
+  font-size: 14px;
+  color: #ddd;
+}
+
+.read-more-btn {
+  margin-top: 30px;
+  padding: 12px 25px;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+/* Main Content Area */
+.blog-main-content {
+  /* Removed display: flex and gap */
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 50px;
+}
+
+.blog-grid {
+  /* Removed flex: 3 */
+  display: grid;
+  /* We'll make it a 3-column grid on larger screens now */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* Blog Card Styling */
+.blog-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.card-image-container {
+  position: relative;
+  height: 220px;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-category {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: bold;
+}
+/* Category Colors */
+.card-category.event { background-color: #ff6b6b; }
+.card-category.menus { background-color: #48dbfb; }
+.card-category.corporate { background-color: #1dd1a1; }
+.card-category.health { background-color: #feca57; }
+
+
+.card-content {
+  padding: 25px;
+}
+
+.card-content h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.card-excerpt {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.card-content .post-meta {
+  color: #999;
+}
+
+
+
+/* Update the responsive media query for the grid */
+@media (max-width: 992px) {
+  /* Update this rule */
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Add this new rule for mobile */
+  .blog-grid {
+    grid-template-columns: 1fr; /* 1 column for mobile */
+  }
+  .blog-hero { padding: 80px 20px; }
+  .blog-hero h1 { font-size: 36px; }
+  .blog-main-content { padding: 40px 20px; }
+}
+
+
+
+
+
+
+
+/* Contact Page Styles */
+.contact-page {
+  padding-bottom: 80px;
+}
+
+/* 1. Contact Info Section */
+.contact-info-section {
+  padding: 80px 50px;
+  background-color: #f8f9fa;
+}
+
+.info-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.info-card {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+  flex: 1;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.info-card svg {
+  font-size: 40px;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+.info-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.info-card p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* 2. Contact Form Section */
+.contact-form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 50px;
+}
+
+.form-container {
+  flex: 1;
+  max-width: 600px;
+}
+
+.contact-form h3 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.contact-form textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.send-btn {
+  padding: 15px 30px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.send-btn:hover {
+  background-color: #45a049;
+}
+
+.form-image-container {
+  flex: 1;
+  max-width: 500px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.form-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .contact-form-section {
+    flex-direction: column-reverse;
+  }
+  .info-cards-container {
+    flex-direction: column;
+  }
+}
+
+
+
+/* Services Page Styles */
+
+/* 1. Hero Section */
+.services-hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.pexels.com/photos/274192/pexels-photo-274192.jpeg') no-repeat center center/cover;
+  color: #fff;
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.services-hero .hero-content h1 {
+  font-size: 52px;
+  margin-bottom: 15px;
+}
+
+.services-hero .hero-content p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #eee;
+}
+
+/* 2. Service Offerings Section */
+.service-offerings {
+  padding: 80px 50px;
+  background-color: #f8f9fa;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  display: flex;
+  overflow: hidden;
+}
+
+.service-card-image {
+  flex: 0 0 40%; /* Image takes 40% of the card width */
+  overflow: hidden;
+}
+
+.service-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.service-card:hover .service-card-image img {
+  transform: scale(1.1);
+}
+
+.service-card-content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card-content h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.service-card-content p {
+  font-size: 16px;
+  color: #666;
+  flex-grow: 1; /* Pushes button to the bottom */
+}
+
+.learn-more-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #4CAF50;
+  border: 2px solid #4CAF50;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  align-self: flex-start; /* Aligns button to the left */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+/* 3. Process Section */
+.process-section {
+  padding: 80px 50px;
+  background-color: #fff;
+}
+
+.process-timeline {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Timeline connecting line */
+.process-timeline::before {
+  content: '';
+  position: absolute;
+  top: 40px; /* Aligns with the center of the icons */
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background-color: #e0e0e0;
+  z-index: 1;
+}
+
+.process-step {
+  flex: 1;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.step-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #4CAF50;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 32px;
+  border: 4px solid #f8f9fa; /* Creates a nice border effect */
+}
+
+.process-step h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.process-step p {
+  font-size: 15px;
+  color: #666;
+  padding: 0 15px;
+}
+
+/* 4. CTA Section */
+.cta-section {
+  padding: 80px 50px;
+  background-color: #333;
+  text-align: center;
+  color: #fff;
+}
+
+.cta-section h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.cta-section p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #ddd;
+}
+
+.cta-button {
+  padding: 15px 35px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #45a049;
+  transform: translateY(-3px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  .process-timeline {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .process-timeline::before {
+    top: 5%;
+    bottom: 5%;
+    left: 49px; /* Aligns with the center of the icons */
+    height: 90%;
+    width: 2px;
+  }
+  .process-step {
+    text-align: left;
+    display: flex;
+    align-items: center;
+  }
+  .step-icon {
+    margin: 0 20px 0 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-card {
+    flex-direction: column;
   }
 }
