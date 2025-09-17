@@ -17,7 +17,7 @@ const Blog = () => {
       id: 2,
       title: 'Top 5 Seasonal Menus for Your Autumn Wedding',
       category: 'Menus',
-      imageUrl: 'https://images.unsplash.com/photo-1565299585323-15d11e389334?auto=format&fit=crop&w=880&q=80',
+      imageUrl: 'https://images.pexels.com/photos/9703865/pexels-photo-9703865.jpeg',
       author: 'Johnathan Doe',
       date: 'September 5, 2025',
       excerpt: 'Discover breathtaking menu ideas that capture the essence of autumn for your special day.',
@@ -26,7 +26,7 @@ const Blog = () => {
         id: 3,
         title: 'Corporate Catering: Impress Your Clients',
         category: 'Corporate',
-        imageUrl: 'https://images.unsplash.com/photo-1505232959456-20616149466f?auto=format&fit=crop&w=1170&q=80',
+        imageUrl: 'https://images.pexels.com/photos/1121482/pexels-photo-1121482.jpeg',
         author: 'Marco Bianchi',
         date: 'August 28, 2025',
         excerpt: 'Elevate your business meetings and events with catering that speaks volumes about your company’s quality.',
@@ -54,7 +54,7 @@ const Blog = () => {
             <span className="featured-tag">Featured Post</span>
             <h1>{featuredPost.title}</h1>
             <p className="post-meta">By {featuredPost.author} on {featuredPost.date}</p>
-            <button className="read-more-btn">Read More →</button>
+            <button className="read-more-btn" onClick={() => window.open("https://www.blogger.com", "_blank")} >Read More →</button>
           </div>
         </section>
       )}
