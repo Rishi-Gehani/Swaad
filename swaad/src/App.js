@@ -9,7 +9,6 @@ import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 import Services from './pages/Services';
 
-// Example placeholder components
 const Menu = () => <h1 style={{ padding: '100px' }}>Menu Page</h1>;
 
 
@@ -21,9 +20,7 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
-            {/* 2. Replace the old placeholder route with the new component */}
-            <Route path="/about" element={<About />} />
-            
+            <Route path="/about" element={<About />} />            
             <Route path="/services" element={<Services />} />
             <Route path="/menu" element={<Menu />} />
             <Route path="/blog" element={<Blog />} />
