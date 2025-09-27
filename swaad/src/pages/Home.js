@@ -59,19 +59,19 @@ const Home = () => {
             <div className="menu-item-image" style={{ backgroundImage: `url(https://images.pexels.com/photos/8148149/pexels-photo-8148149.jpeg)` }}></div>
             <h4>SINDHI</h4>
             <p>"From Sindhi Kadhi to Sai Bhaji – taste the comfort of tradition.”</p>
-            <button className="get-menu-btn">Get Menu</button>
+            <Link to="/menu?cuisine=sindhi" className="get-menu-btn">Get Menu</Link>
           </div>
           <div className="menu-item">
             <div className="menu-item-image" style={{ backgroundImage: `url(https://images.pexels.com/photos/5775684/pexels-photo-5775684.jpeg)` }}></div>
             <h4>GUJARATI</h4>
             <p>“From Dhokla to Undhiyu – a platter full of tradition.”</p>
-            <button className="get-menu-btn">Get Menu</button>
+            <Link to="/menu?cuisine=gujarati" className="get-menu-btn">Get Menu</Link>
           </div>
           <div className="menu-item">
             <div className="menu-item-image" style={{ backgroundImage: `url(https://images.pexels.com/photos/17223838/pexels-photo-17223838.jpeg)` }}></div>
             <h4>MAHRASHTRAIN</h4>
             <p>"From Misal to Puran Poli – a celebration on every plate.”</p>
-            <button className="get-menu-btn">Get Menu</button>
+            <Link to="/menu?cuisine=marathi" className="get-menu-btn">Get Menu</Link>
           </div>
         </div>
       </section>

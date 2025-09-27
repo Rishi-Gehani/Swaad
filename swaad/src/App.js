@@ -8,8 +8,13 @@ import About from './pages/About';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 import Services from './pages/Services';
-
-const Menu = () => <h1 style={{ padding: '100px' }}>Menu Page</h1>;
+import Menu from './pages/Menu';
+import Cart from './pages/Cart';
+import Login from './components/Login';
+import OrderHistory from './pages/OrderHistory';
+import Booking from './pages/Booking';
+import Payment from './pages/Payment';
+import Confirmation from './pages/Confirmation';
 
 
 function App() {
@@ -25,6 +30,14 @@ function App() {
             <Route path="/menu" element={<Menu />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/profile" element={<Login />} />
+            <Route path="/order-history" element={<OrderHistory />} />
+            <Route path="/booking" element={<Booking />} />
+            <Route path="/payment" element={<Payment />} />
+            <Route path="/confirmation" element={<Confirmation />} /> 
+          
+
           </Routes>
         </main>
         <Footer />
