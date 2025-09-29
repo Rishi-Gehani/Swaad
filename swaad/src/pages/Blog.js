@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Blog = () => {
-  // Your placeholder data for blog posts remains the same...
   const blogPosts = [
     {
       id: 1,
@@ -47,7 +46,6 @@ const Blog = () => {
 
   return (
     <div className="blog-page">
-      {/* Featured Post Hero Section (no changes here) */}
       {featuredPost && (
         <section className="blog-hero" style={{ backgroundImage: `url(${featuredPost.imageUrl})` }}>
           <div className="hero-content">
@@ -61,7 +59,6 @@ const Blog = () => {
 
       {/* Main Blog Content Area */}
       <div className="blog-main-content">
-        {/* The sidebar is now removed, only the grid remains */}
         <div className="blog-grid">
           {otherPosts.map(post => (
             <div className="blog-card" key={post.id}>

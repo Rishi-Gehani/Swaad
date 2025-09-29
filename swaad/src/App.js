@@ -11,11 +11,10 @@ import Services from './pages/Services';
 import Menu from './pages/Menu';
 import Cart from './pages/Cart';
 import Login from './components/Login';
-import OrderHistory from './pages/OrderHistory';
 import Booking from './pages/Booking';
 import Payment from './pages/Payment';
 import Confirmation from './pages/Confirmation';
-
+import OrderHistory from './pages/OrderHistory';
 
 function App() {
   return (

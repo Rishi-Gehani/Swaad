@@ -1,42 +1,37 @@
 import React, { createContext, useState, useContext } from 'react';
 
-// Create the context
 const AuthContext = createContext();
 
-// Create a custom hook for easy access
 export const useAuth = () => useContext(AuthContext);
 
-// Create the provider component
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
-  const [orders, setOrders] = useState([]); // To store order history for the session
+  const [orders, setOrders] = useState([]); 
 
-  // Mock Login (always succeeds)
   const login = (email, password) => {
     console.log('Logging in...');
     const fakeUser = { name: 'Test User', email: email };
     setUser(fakeUser);
-    return true; // Indicate success
+    return true; 
   };
 
-  // Mock Signup (always succeeds)
   const signup = (name, email, password) => {
     console.log('Signing up...');
     const fakeUser = { name: name, email: email };
     setUser(fakeUser);
-    return true; // Indicate success
+    return true; 
   };
 
-  // Logout
+  
   const logout = () => {
     setUser(null);
-    setOrders([]); // Clear orders on logout
+    setOrders([]); 
   };
   
-  // Function to add a completed order to history
+  
   const addOrder = (order) => {
     const newOrder = {
-      id: new Date().getTime(), // Unique ID for the order
+      id: new Date().getTime(), 
       date: new Date().toLocaleDateString(),
       items: order.items,
       total: order.total,

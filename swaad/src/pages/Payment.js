@@ -1,44 +1,99 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useCart } from '../context/CartContext';
 import { useAuth } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCcVisa, faCcMastercard, faCcAmex } from '@fortawesome/free-brands-svg-icons';
+import { faLock } from '@fortawesome/free-solid-svg-icons';
 
 const Payment = () => {
   const { cartItems, totalPrice, clearCart } = useCart();
   const { addOrder } = useAuth();
   const navigate = useNavigate();
 
-  const handlePay = () => {
-    // 1. Create the order object
+  // 1. Add state for the card details form
+  const [cardDetails, setCardDetails] = useState({
+    cardNumber: '',
+    cardName: '',
+    expiryDate: '',
+    cvc: '',
+  });
+
+  const handleCardChange = (e) => {
+    setCardDetails({ ...cardDetails, [e.target.name]: e.target.value });
+  };
+
+  const handlePay = (e) => {
+    e.preventDefault(); // Prevent default form submission
     const orderDetails = {
       items: cartItems,
       total: totalPrice,
     };
-    // 2. Add the order to our mock history
     addOrder(orderDetails);
-    // 3. Clear the cart
     clearCart();
-    // 4. Navigate to confirmation
     navigate('/confirmation');
   };
 
   return (
     <div className="payment-page">
-      <h1 className="section-title">Payment</h1>
-      <div className="payment-summary">
-        <h3>Order Summary</h3>
-        {cartItems.map(item => (
-            <div key={item.id} className="summary-item">
-                <span>{item.name} (x{item.quantity})</span>
-                <span>₹{(item.price * item.quantity).toFixed(2)}</span>
+      <div className="payment-container">
+        <div className="payment-details">
+          <h2 className="payment-title">Secure Checkout</h2>
+          
+          {/* 2. Add the new card payment form */}
+          <form onSubmit={handlePay} className="card-form">
+            <div className="form-group">
+              <label htmlFor="cardName">Name on Card</label>
+              <input type="text" id="cardName" name="cardName" onChange={handleCardChange} required />
             </div>
-        ))}
-        <hr/>
-        <div className="summary-total">
-            <span>Total</span>
-            <span>₹{totalPrice.toFixed(2)}</span>
+            <div className="form-group">
+              <label htmlFor="cardNumber">Card Number</label>
+              <input type="text" id="cardNumber" name="cardNumber" placeholder="0000 0000 0000 0000" onChange={handleCardChange} required />
+            </div>
+            <div className="form-row">
+              <div className="form-group">
+                <label htmlFor="expiryDate">Expiry Date</label>
+                <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" onChange={handleCardChange} required />
+              </div>
+              <div className="form-group">
+                <label htmlFor="cvc">CVC</label>
+                <input type="text" id="cvc" name="cvc" placeholder="123" onChange={handleCardChange} required />
+              </div>
+            </div>
+            {/* 4. Move the Pay Now button inside the form */}
+            <button type="submit" className="pay-now-btn">
+              Pay ₹{totalPrice.toFixed(2)}
+            </button>
+          </form>
+
+          <div className="accepted-cards">
+            <FontAwesomeIcon icon={faCcVisa} size="2x" />
+            <FontAwesomeIcon icon={faCcMastercard} size="2x" />
+            <FontAwesomeIcon icon={faCcAmex} size="2x" />
+          </div>
+          <div className="security-info">
+            <FontAwesomeIcon icon={faLock} />
+            <span>Your payment information is secure.</span>
+          </div>
         </div>
-        <button onClick={handlePay} className="pay-now-btn">Pay Now</button>
+
+        <div className="payment-summary">
+          <h3>Order Summary</h3>
+          <div className="summary-items-list">
+            {cartItems.map(item => (
+                <div key={item.id} className="summary-item">
+                    <span>{item.name} (x{item.quantity})</span>
+                    <span>₹{(item.price * item.quantity).toFixed(2)}</span>
+                </div>
+            ))}
+          </div>
+          <hr/>
+          <div className="summary-total">
+            <span>Total Amount</span>
+            <span>₹{totalPrice.toFixed(2)}</span>
+          </div>
+          {/* 3. The Pay Now button is now moved to the left column */}
+        </div>
       </div>
     </div>
   );

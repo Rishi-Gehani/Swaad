@@ -26,7 +26,7 @@ const MenuListItem = ({ item }) => {
           </div>
         ) : (
           <button onClick={() => addToCart(item)} className="add-button">
-            Add
+            Add 1 tray
           </button>
         )}
       </div>

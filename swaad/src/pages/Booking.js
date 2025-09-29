@@ -1,48 +1,9 @@
-// import React, { useState } from 'react';
-// import { useNavigate } from 'react-router-dom';
-
-// const Booking = () => {
-//   const navigate = useNavigate();
-//   const [bookingDetails, setBookingDetails] = useState({
-//     name: '', contact: '', date: '', time: '', venue: ''
-//   });
-
-//   const handleChange = e => {
-//     setBookingDetails({ ...bookingDetails, [e.target.name]: e.target.value });
-//   };
-
-//   const handleSubmit = e => {
-//     e.preventDefault();
-//     // In a real app, save details to the database here
-//     console.log('Booking Details:', bookingDetails);
-//     navigate('/payment');
-//   };
-
-//   return (
-//     <div className="booking-page">
-//       <h1 className="section-title">Booking Details</h1>
-//       <form onSubmit={handleSubmit} className="booking-form">
-//         <input type="text" name="name" placeholder="Full Name" onChange={handleChange} required />
-//         <input type="tel" name="contact" placeholder="Contact Number" onChange={handleChange} required />
-//         <input type="date" name="date" onChange={handleChange} required />
-//         <input type="time" name="time" onChange={handleChange} required />
-//         <textarea name="venue" placeholder="Event Venue Address" onChange={handleChange} required></textarea>
-//         <button type="submit">Proceed to Payment</button>
-//       </form>
-//     </div>
-//   );
-// };
-
-// export default Booking;
-
-
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Booking = () => {
   const navigate = useNavigate();
   
-  // State to hold all form data in a single object
   const [bookingDetails, setBookingDetails] = useState({
     name: '',
     contact: '',
@@ -50,19 +11,17 @@ const Booking = () => {
     time: '',
     venue: '',
     guests: '',
-    eventType: 'Private Party', // Default value
+    eventType: 'Private Party',
+    packaging: 'buffet', 
     instructions: ''
   });
 
-  // A single handler to update the state based on input name
   const handleChange = e => {
     setBookingDetails({ ...bookingDetails, [e.target.name]: e.target.value });
   };
 
-  // On form submission, log the data and navigate to the payment page
   const handleSubmit = e => {
     e.preventDefault();
-    // In a real app, you would save these details to your database
     console.log('Booking Details Submitted:', bookingDetails);
     navigate('/payment');
   };
@@ -106,6 +65,34 @@ const Booking = () => {
           </div>
         </div>
         
+        <div className="form-group full-width">
+          <label>Meal Packaging Options</label>
+          <div className="radio-group">
+            <label className="radio-label">
+              <input 
+                type="radio" 
+                name="packaging" 
+                value="buffet"
+                checked={bookingDetails.packaging === 'buffet'} 
+                onChange={handleChange}
+              />
+              <span className="custom-radio"></span>
+              Buffet Style Service
+            </label>
+            <label className="radio-label">
+              <input 
+                type="radio" 
+                name="packaging" 
+                value="individual"
+                checked={bookingDetails.packaging === 'individual'} 
+                onChange={handleChange}
+              />
+              <span className="custom-radio"></span>
+              Individual Boxed Meals
+            </label>
+          </div>
+        </div>
+
         <div className="form-group full-width">
           <label htmlFor="venue">Venue Address</label>
           <textarea id="venue" name="venue" rows="4" onChange={handleChange} required></textarea>

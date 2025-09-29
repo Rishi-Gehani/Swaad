@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendarCheck, faCircleInfo, faHeadset } from '@fortawesome/free-solid-svg-icons';
+import { faCalendarCheck, faCircleInfo, faHeadset, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 
 const Contact = () => {
-  // State for form fields using a single state object
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -11,7 +10,8 @@ const Contact = () => {
     message: '',
   });
 
-  // Handler to update state using the spread operator
+  const [showSuccessPopup, setShowSuccessPopup] = useState(false);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prevState => ({
@@ -22,16 +22,19 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you would typically handle the form submission,
-    // e.g., send the data to a server.
-    alert(`Message Sent! From: ${formData.name}`);
-    // Reset form after submission
+    console.log('Form Submitted:', formData);
+
+    setShowSuccessPopup(true);
+
     setFormData({ name: '', email: '', subject: '', message: '' });
+
+    setTimeout(() => {
+      setShowSuccessPopup(false);
+    }, 3000);
   };
 
   return (
     <div className="contact-page">
-      {/* 1. Contact Info Section */}
       <section className="contact-info-section">
         <h2 className="section-title">CONTACT US FOR ANY QUERY</h2>
         <div className="info-cards-container">
@@ -53,7 +56,7 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* 2. Contact Form Section */}
+      {/* Contact Form Section */}
       <section className="contact-form-section">
         <div className="form-container">
           <form onSubmit={handleSubmit} className="contact-form">
@@ -104,6 +107,14 @@ const Contact = () => {
           <img src="https://images.pexels.com/photos/7709287/pexels-photo-7709287.jpeg" alt="Customer Care" />
         </div>
       </section>
+
+      {/* 4. popup */}
+      {showSuccessPopup && (
+        <div className="success-popup">
+          <FontAwesomeIcon icon={faCheckCircle} />
+          Message Sent Successfully!
+        </div>
+      )}
     </div>
   );
 };

@@ -6,7 +6,6 @@ import { faLeaf, faListCheck, faUserTie } from '@fortawesome/free-solid-svg-icon
 
 const Home = () => {
   return (
-    // We use a React Fragment <> to wrap all the sections
     <>
       {/* Hero Section */}
       <section className="hero">
