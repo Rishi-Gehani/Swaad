@@ -11,6 +11,7 @@ const Contact = () => {
   });
 
   const [showSuccessPopup, setShowSuccessPopup] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,17 +21,32 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form Submitted:', formData);
 
-    setShowSuccessPopup(true);
+    try {
+      const response = await fetch("http://localhost:5000/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
 
-    setFormData({ name: '', email: '', subject: '', message: '' });
+      if (response.ok) {
+        setShowSuccessPopup(true);
+        setErrorMessage('');
+        setFormData({ name: '', email: '', subject: '', message: '' });
 
-    setTimeout(() => {
-      setShowSuccessPopup(false);
-    }, 3000);
+        setTimeout(() => {
+          setShowSuccessPopup(false);
+        }, 3000);
+      } else {
+        const data = await response.json();
+        setErrorMessage(data.message || "Failed to send message");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      setErrorMessage("Something went wrong. Please try again later.");
+    }
   };
 
   return (
@@ -102,13 +118,16 @@ const Contact = () => {
             </div>
             <button type="submit" className="send-btn">Send Message</button>
           </form>
+
+          {/* Show error message if something goes wrong */}
+          {errorMessage && <p className="error-message">{errorMessage}</p>}
         </div>
         <div className="form-image-container">
           <img src="https://images.pexels.com/photos/7709287/pexels-photo-7709287.jpeg" alt="Customer Care" />
         </div>
       </section>
 
-      {/* 4. popup */}
+      {/* Success Popup */}
       {showSuccessPopup && (
         <div className="success-popup">
           <FontAwesomeIcon icon={faCheckCircle} />
