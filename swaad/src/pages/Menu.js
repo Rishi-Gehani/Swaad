@@ -69,7 +69,7 @@ const menuData = {
       
     },
     packages: [
-      { id: 42, name: 'Sindhi Thali 1', price: 1314, description: 'Dal Pakwan(x1) , Sana Bhajiya(x1) , Onion Koki(x2) , Tea/Coffee(x1) | 1 Tray = 10 Serves', image: 'https://via.placeholder.com/150' },
+      { id: 42, name: 'Swaad-e-Sohan Thali', price: 1314, description: 'Dal Pakwan(x1) , Sana Bhajiya(x1) , Onion Koki(x2) , Tea/Coffee(x1) | 1 Tray = 10 Serves', image: 'https://via.placeholder.com/150' },
       { id: 43, name: 'Sindhi Thali 2', price: 1297, description: 'Dal Pakwan(x1) , Mirchi Bhajiya(x2) , Besan Koki(x2) , Tea/Coffee(x1) | 1 Tray = 10 Serves',  image: 'https://via.placeholder.com/150' },
       { id: 44, name: 'Sindhi Thali 3', price: 6434, description: 'Jeera Rice , Spl. Sindhi Kadhi(Besan) , Butter Roti(x2) , Palak Paneer, Aalo Bhindi , Singhar Mithai(x2) , Boondi Raita(x1) | 1 Tray = 10 Serves',  image: 'https://via.placeholder.com/150' },
       { id: 45, name: 'Sindhi Thali 4', price: 6370, description: 'Spl. Sindhi Tairi , Sai Bhaji , Butter Garlic Naan(x2), Paneer Butter  Masala , Masala Beeh , Spl. Sindhi Lola(x2) , Masala Papad| 1 Tray = 10 Serves',  image: 'https://via.placeholder.com/150' },
@@ -142,10 +142,10 @@ const menuData = {
     },
     packages: [
         { id: 71, name: 'Gujarati Combo 1', price: 1101, description: 'Khaman , Patra , Fafda , Jalebi , Tea/Coffee | 1 Tray = 10 Serves ', image: 'https://via.placeholder.com/150' },
-        { id: 72, name: 'Gujarati Combo 2', price: 1101, description: 'Dhokla , Khandvi , Fafda Jalebi , Tea/Coffee | 1 Tray = 10 Serves ', image: 'https://via.placeholder.com/150' },
+        { id: 72, name: 'Spl.Taste-e-Tanvi Thali', price: 1101, description: 'Dhokla , Khandvi , Fafda Jalebi , Tea/Coffee | 1 Tray = 10 Serves ', image: 'https://via.placeholder.com/150' },
         { id: 73, name: 'Gujarati Combo 3', price: 4075, description: 'Spl. Gujarati Masala Khichdi , Ringan Nu Olo , Roomali Roti(x2) , Undhiyu , Kesar Basundi(x1), Masala Chaas(x1) | 1 Tray = 10 Serves ', image: 'https://via.placeholder.com/150' },
         { id: 74, name: 'Gujarati Combo 4', price: 5482, description: 'Peas Pulao , Dal Takda , Vaal Nu Saak , Thepla(x2) , Barela Bhindi , Laapsi , Boondi Raita(x1) | 1 Tray = 10 Serves ', image: 'https://via.placeholder.com/150' },
-        { id: 75, name: 'Gujarati Combo 5', price: 4955, description: 'Biryani , Sev Tameta , Butter Garlic Naan(x2) , Mix Veg , Rabdi , Masala Chaas(x1) | 1 Tray = 10 Serves ', image: 'https://via.placeholder.com/150' },
+        { id: 75, name: 'Spl.Jashn-e-Jasleen Thali', price: 4955, description: 'Biryani , Sev Tameta , Butter Garlic Naan(x2) , Mix Veg , Rabdi , Masala Chaas(x1) | 1 Tray = 10 Serves ', image: 'https://via.placeholder.com/150' },
 
     ],
 
@@ -214,9 +214,9 @@ const menuData = {
     },
     packages: [
         { id: 97, name: 'Marathi Tiffin 1 ', price: 1314, description: 'Misal Pav, Puran Poli, Batata Vada , Tea/Coffee | 1 Tray = 10 Serves', image: 'https://via.placeholder.com/150' },
-        { id: 98, name: 'Marathi Tiffin 2', price: 1059, description: 'Misal Pav, Kandha Poha, Sabudana , Tea/Coffee| 1 Tray = Serves', image: 'https://via.placeholder.com/150' },
+        { id: 98, name: 'Spl.Full On Heet Feast Thali', price: 1059, description: 'Misal Pav, Kandha Poha, Sabudana , Tea/Coffee| 1 Tray = Serves', image: 'https://via.placeholder.com/150' },
         { id: 99, name: 'Marathi Tiffin 3', price: 4915, description: 'Jeera Rice , Bharli Vangi , Bhakri(Jawari)(x2) , Methi Chi Patal , Modak(x5) , Masala Papad(x1) | 1 Tray = Serves ', image: 'https://via.placeholder.com/150' },
-        { id: 100, name: 'Marathi Tiffin 4', price: 4475, description: 'Plain Rice , Dal Takda , Sev Bhaji , Bhakri(Rice)(x2) , Paneer Burji , Gajar Halwa(x1) , Boondi Raita(x1) | 1 Tray = Serves', image: 'https://via.placeholder.com/150' },
+        { id: 100, name: 'Spl.Janhavi Zaayka Thali ', price: 4475, description: 'Jeera Rice , Dal Takda , Sev Bhaji , Bhakri(Rice)(x2) , Paneer Burji , Gajar Halwa(x1) , Boondi Raita(x1) | 1 Tray = Serves', image: 'https://via.placeholder.com/150' },
         { id: 101, name: 'Marathi Tiffin 5', price: 7394, description: 'Jeera Rice , Pitla , Thaalipeeth(x2) , Aalo chi Bhaji , Chana Masala , Shrikhand(x1) , Masala Chaas(x1) | 1 Tray = Serves', image: 'https://via.placeholder.com/150' },
       ],
   },
