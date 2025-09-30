@@ -115,6 +115,8 @@ body {
 /* Hero Section Styles */
 .hero {
   background: url('https://images.pexels.com/photos/678414/pexels-photo-678414.jpeg') no-repeat center center/cover;
+   /* background: url('https://i.pinimg.com/1200x/96/ee/55/96ee551279c55efe9f0ff247d369ec97.jpg') no-repeat center center/cover; */
+  /* background: url('https://i.pinimg.com/1200x/44/1d/a4/441da4f404f11bdfbdab2bbfb38b8e6d.jpg') no-repeat center center/cover; */
   padding: 180px 20px;
   text-align: left;
   position: relative;

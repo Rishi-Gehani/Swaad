@@ -183,7 +183,7 @@ const Login = ({ isOpen, onClose }) => {
       <div className="modal-content animated">
         <div className="modal-art-side">
           <h2>Welcome to Swaad</h2>
-          <p>Your culinary journey begins here. Log in to manage your events.</p>
+          <p>Where Every Meal Tells a Story of Love and Tradition.</p>
         </div>
         <div className="modal-form-side">
           <button onClick={onClose} className="close-btn">&times;</button>
@@ -210,8 +210,8 @@ const Login = ({ isOpen, onClose }) => {
               {isLoginView ? 'Login' : 'Sign Up'}
             </button>
           </form>
-          <p onClick={() => { setIsLoginView(!isLoginView); setMessage(''); }} className="toggle-view">
-            {isLoginView ? "Don't have an account? Sign Up" : "Already have an account? Login"}
+          <p onClick={() => setIsLoginView(!isLoginView)} className="toggle-view">
+            {isLoginView ? "Be part of the swaad family! - Sign Up" : "Already part of the Swaad family? Login"}
           </p>
         </div>
       </div>

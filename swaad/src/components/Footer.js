@@ -45,11 +45,11 @@ const Footer = () => {
           <ul className="contact-info">
             <li className='contact-item'>
               <FontAwesomeIcon icon={faLocationDot} />
-              <span>123 Street, New York, USA</span>
+              <span>Mumbai</span>
             </li>
             <li className='contact-item'>
               <FontAwesomeIcon icon={faPhone} />
-              <span>+91 1234567890</span>
+              <span>+91 8282984356</span>
             </li>
             <li className='contact-item'>
               <FontAwesomeIcon icon={faEnvelope} />
