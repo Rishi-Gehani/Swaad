@@ -16,12 +16,39 @@ const Booking = () => {
     instructions: ''
   });
 
+   const [showSuccessPopup, setShowSuccessPopup] = useState(false);
+    const [errorMessage, setErrorMessage] = useState('');
+  
+
   const handleChange = e => {
     setBookingDetails({ ...bookingDetails, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = async e => {
     e.preventDefault();
+    try {
+      const response = await fetch("http://localhost:5000/bookings", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(bookingDetails),
+      });
+
+      if (response.ok) {
+        setShowSuccessPopup(true);
+        setErrorMessage('');
+        setBookingDetails({ name: '', contact: '', date: '', time: '', venue: '', guests: '', eventType: 'Private Party', packaging: 'buffet', instructions: '' });
+
+        setTimeout(() => {
+          setShowSuccessPopup(false);
+        }, 3000);
+      } else {
+        const data = await response.json();
+        setErrorMessage(data.message || "Failed to send message");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      setErrorMessage("Something went wrong. Please try again later.");
+    }
     console.log('Booking Details Submitted:', bookingDetails);
     navigate('/payment');
   };
