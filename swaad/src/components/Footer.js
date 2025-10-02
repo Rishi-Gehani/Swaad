@@ -9,7 +9,6 @@ const Footer = () => {
   return (
     <footer className="new-footer">
       <div className="footer-container">
-        {/* Column 1: Brand and Social Media */}
         <div className="footer-section brand-section">
           <div className="logo">
             <FontAwesomeIcon icon={faUtensils} className="logo-icon" />
@@ -26,7 +25,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Column 2: Company Links */}
+
         <div className="footer-section">
           <h3>Company</h3>
           <ul>
@@ -39,7 +38,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Column 3: Contact Info */}
+
         <div className="footer-section">
           <h3>Contact</h3>
           <ul className="contact-info">
@@ -58,7 +57,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Column 4: Working Hours */}
+
         <div className="footer-section">
           <h3>Working Hours</h3>
           <p>Monday - Saturday:<br /> 9:00 AM - 9:00 PM</p>

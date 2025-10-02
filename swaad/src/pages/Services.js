@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faComments, faUtensils, faStar, faLeaf } from '@fortawesome/free-solid-svg-icons';
 
 const Services = () => {
-  // Data for the service offerings
   const servicesData = [
     {
       image: 'https://images.pexels.com/photos/1114425/pexels-photo-1114425.jpeg',
@@ -84,7 +83,6 @@ const Services = () => {
         </div>
       </section>
 
-      {/* 4. Call to Action (CTA) */}
       <section className="cta-section">
         <h2>Ready to Plan Your Unforgettable Event?</h2>
         <p>Contact us today for a free, no-obligation quote and let's start planning!</p>

@@ -119,7 +119,7 @@ const Contact = () => {
             <button type="submit" className="send-btn">Send Message</button>
           </form>
 
-          {/* Show error message if something goes wrong */}
+          {/* error message */}
           {errorMessage && <p className="error-message">{errorMessage}</p>}
         </div>
         <div className="form-image-container">

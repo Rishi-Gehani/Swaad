@@ -177,13 +177,6 @@ body {
   text-decoration: none;
 }
 
-/* About Section Styles */
-/* .about-section {
-  background-color: f4f4f4;
-  padding: 80px 50px;
-  color: #333;
-} */
-
 .about-section {
   background-color: #4CAF50;
   padding: 80px 50px;
@@ -197,15 +190,6 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
-
-/* .about-card {
-  flex: 1;
-  background-color: #4CAF50;
-  color: #fff;
-  padding: 40px;
-  border-radius: 8px;
-  text-align: center;
-} */
 
 .about-card {
   flex: 1;
@@ -371,7 +355,7 @@ body {
   color: #777;
 }
 
-/* New Footer Styles */
+/* Footer Styles */
 .new-footer {
   background-color: #1a1a1a;
   color: #bbb;
@@ -395,7 +379,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* Brand Section Specifics */
 .brand-section .logo {
   color: #fff; 
   margin-bottom: 15px;
@@ -483,7 +466,6 @@ body {
   border-color: #4CAF50;
 }
 
-/* Footer Bottom Bar */
 .footer-bottom {
   border-top: 1px solid #444;
   text-align: center;
@@ -517,7 +499,6 @@ body {
 
 
 /* About Page Styles */
-
 /* 1. Hero Section for About Page */
 .about-hero {
   background: url('https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg') no-repeat center center/cover;
@@ -690,8 +671,6 @@ body {
 .blog-page {
   background-color: #f8f9fa;
 }
-
-/* Featured Post Hero Section */
 .blog-hero {
   position: relative;
   padding: 120px 50px;
@@ -756,7 +735,6 @@ body {
   color: #fff;
 }
 
-/* Main Content Area */
 .blog-main-content {
   max-width: 1200px;
   margin: 60px auto;
@@ -852,7 +830,6 @@ body {
 
 
 /* Contact Page Styles  */
-
 .contact-page {
   padding-bottom: 80px;
 }
@@ -1027,7 +1004,6 @@ body {
 
 
 /* Services Page Styles */
-
 /* 1. Hero Section */
 .services-hero {
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.pexels.com/photos/274192/pexels-photo-274192.jpeg') no-repeat center center/cover;
@@ -1071,7 +1047,7 @@ body {
 }
 
 .service-card-image {
-  flex: 0 0 40%; /* Image takes 40% of the card width */
+  flex: 0 0 40%; 
   overflow: hidden;
 }
 
@@ -1100,7 +1076,7 @@ body {
 .service-card-content p {
   font-size: 16px;
   color: #666;
-  flex-grow: 1; /* Pushes button to the bottom */
+  flex-grow: 1; 
 }
 
 .learn-more-btn {
@@ -1112,7 +1088,7 @@ body {
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
-  align-self: flex-start; /* Aligns button to the left */
+  align-self: flex-start; 
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -1139,7 +1115,7 @@ body {
 .process-timeline::before {
   content: '';
   position: absolute;
-  top: 40px; /* Aligns with the center of the icons */
+  top: 40px; 
   left: 10%;
   right: 10%;
   height: 2px;
@@ -1165,7 +1141,7 @@ body {
   justify-content: center;
   margin: 0 auto 20px;
   font-size: 32px;
-  border: 4px solid #f8f9fa; /* Creates a nice border effect */
+  border: 4px solid #f8f9fa; 
 }
 
 .process-step h3 {
@@ -1227,7 +1203,7 @@ body {
   .process-timeline::before {
     top: 5%;
     bottom: 5%;
-    left: 49px; /* Aligns with the center of the icons */
+    left: 49px; 
     height: 90%;
     width: 2px;
   }
@@ -1252,7 +1228,7 @@ body {
 
 
 
-/* === FINAL Menu Page Styles === */
+/* Menu Page Styles */
 
 /* Page Container */
 .menu-page {
@@ -1260,7 +1236,7 @@ body {
   background-color: #fff;
 }
 
-/* Creative Accordion Header (Cuisine Selector) */
+/* Cuisine Selector */
 .creative-header {
   width: 100%;
   padding: 40px 30px;
@@ -1295,20 +1271,19 @@ body {
   color: #fff;
 }
 
-/* Accordion Content Area (after expanding a cuisine) */
+/* After expanding a cuisine */
 .main-accordion .accordion-content {
   padding: 20px 30px;
   background-color: #fff;
   border: 1px solid #eee;
   border-radius: 8px;
-  margin-top: -25px; /* Pulls content up under the header */
-  padding-top: 35px; /* Adds space back inside */
+  margin-top: -25px; 
+  padding-top: 35px; 
 }
 
-/* Two-Column Layout */
 .menu-columns {
   display: flex;
-  gap: 40px; /* Space between the two columns */
+  gap: 40px; 
 }
 
 .column {
@@ -1316,16 +1291,15 @@ body {
 }
 
 .customize-column {
-  flex-basis: 65%; /* Customize section takes more space */
+  flex-basis: 65%; 
 }
 
 .packages-column {
-  flex-basis: 35%; /* Packages section takes less space */
+  flex-basis: 35%; 
   border-left: 1px solid #f0f0f0;
   padding-left: 40px;
 }
 
-/* Column Titles (e.g., "Customize Your Own") */
 .column h3 {
     font-size: 24px;
     margin-bottom: 20px;
@@ -1334,7 +1308,6 @@ body {
     padding-bottom: 10px;
 }
 
-/* Category Titles (e.g., "Rice", "Dal") */
 .category-title {
   font-size: 20px;
   font-weight: bold;
@@ -1343,14 +1316,12 @@ body {
   border-bottom: 1px solid #f0f0f0;
 }
 
-/* Container for the list of dishes */
 .menu-products-list {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-/* Individual Dish Item (List Style) */
 .menu-list-item {
   display: flex;
   justify-content: space-between;
@@ -1362,7 +1333,6 @@ body {
   border-bottom: none;
 }
 
-/* Details within the dish item */
 .item-details h4 {
   font-size: 18px;
   margin: 0 0 5px;
@@ -1380,12 +1350,11 @@ body {
   max-width: 400px;
 }
 
-/* Actions within the dish item (Image & Buttons) */
 .item-actions {
   text-align: center;
   position: relative;
   width: 150px;
-  flex-shrink: 0; /* Prevents this column from shrinking */
+  flex-shrink: 0; 
 }
 
 .item-image {
@@ -1447,9 +1416,9 @@ body {
   font-weight: bold;
 }
 
-/* Cart Counter Badge in Header */
+/* Cart Counter */
 .icon-link {
-  position: relative; /* Needed for positioning the counter */
+  position: relative; 
 }
 
 .cart-counter {
@@ -1846,7 +1815,6 @@ body {
   color: #777;
 }
 
-/* Container for the action buttons */
 .profile-actions {
   display: flex;
   flex-direction: column;
@@ -1854,7 +1822,6 @@ body {
   margin-top: 15px;
 }
 
-/* Base style for both buttons */
 .profile-btn {
   width: 100%;
   padding: 12px 15px;
@@ -1871,7 +1838,6 @@ body {
   gap: 12px; 
 }
 
-/* Order History button style */
 .history-btn {
   background-color: #f0f0f0;
   color: #333;
@@ -1881,7 +1847,6 @@ body {
   background-color: #e0e0e0;
 }
 
-/* Logout button style */
 .logout-btn {
   background-color: #fbe9e7; 
   color: #c62828; 
@@ -1895,8 +1860,7 @@ body {
 
 
 
-/* Booking Page Styles === */
-
+/* Booking Page Styles */
 .booking-page {
   padding: 60px 50px;
   background-color: #f8f9fa; 
@@ -2090,7 +2054,7 @@ body {
 
 
 
-/* === FINAL & Improved Payment Page Styles === */
+/* Payment Page Styles */
 
 .payment-page {
   padding: 60px 50px;
@@ -2103,7 +2067,7 @@ body {
 
 .payment-container {
   display: grid;
-  grid-template-columns: 1.2fr 1fr; /* Give slightly more space to the form */
+  grid-template-columns: 1.2fr 1fr; 
   gap: 50px;
   max-width: 1000px;
   width: 100%;
@@ -2113,7 +2077,6 @@ body {
   overflow: hidden;
 }
 
-/* --- Left Column (Form & Details) --- */
 .payment-details {
   padding: 40px;
 }
@@ -2125,7 +2088,6 @@ body {
   color: #333;
 }
 
-/* Card Form Styles */
 .card-form {
   margin-bottom: 25px;
 }
@@ -2181,10 +2143,9 @@ body {
   color: #4CAF50;
 }
 
-/* --- Right Column (Order Summary) --- */
 .payment-summary {
   padding: 40px;
-  background-color: #f8f9fa; /* Slightly different background for contrast */
+  background-color: #f8f9fa; 
 }
 
 .payment-summary h3 {
@@ -2222,7 +2183,6 @@ body {
   color: #333;
 }
 
-/* --- Pay Now Button --- */
 .pay-now-btn {
   width: 100%;
   padding: 16px;
@@ -2245,12 +2205,12 @@ body {
 /* --- Responsive Adjustments --- */
 @media (max-width: 992px) {
   .payment-container {
-    grid-template-columns: 1fr; /* Stack columns on smaller screens */
+    grid-template-columns: 1fr;
   }
 }
 
 
-/* === NEW & Creative Confirmation Page Styles === */
+/* Confirmation Page Styles */
 
 .confirmation-overlay {
   position: fixed;
@@ -2258,7 +2218,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(248, 249, 250, 0.9); /* A slightly transparent background */
+  background-color: rgba(248, 249, 250, 0.9); 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2276,7 +2236,6 @@ body {
   animation: popIn 0.6s 0.2s ease-out backwards;
 }
 
-/* --- Animated Checkmark --- */
 .success-animation {
   width: 100px;
   height: 100px;
@@ -2284,7 +2243,7 @@ body {
 }
 
 .checkmark-circle {
-  stroke-dasharray: 289; /* Circumference of the circle */
+  stroke-dasharray: 289; 
   stroke-dashoffset: 289;
   stroke-width: 5;
   stroke-miterlimit: 10;
@@ -2320,7 +2279,6 @@ body {
 }
 
 
-/* --- Text and Button Styles --- */
 .confirmation-title {
   font-size: 32px;
   font-weight: bold;

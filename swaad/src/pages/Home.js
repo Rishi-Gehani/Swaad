@@ -11,7 +11,6 @@ const Home = () => {
       <section className="hero">
         <div className="hero-content">
           <h1>Where Every Meal Tells a Story of Love and Tradition.</h1>
-          {/* <h1>Preserving Heritage, Serving Memories.</h1> */}
           <p>Experience the Taste of Tradition, Cooked with Love Served with Soul.</p>
           <div className="hero-buttons">
             <Link to="/menu" className="btn-get-started">Get Started →</Link>
