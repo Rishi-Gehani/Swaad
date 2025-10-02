@@ -1,7 +1,6 @@
 #  Swaad - A Modern Catering Service Website
 
 ![Swaad Homepage Screenshot](./swaad/src/assets/Swaad.png)
-*Replace `placeholder.jpg` with a screenshot of your homepage.*
 
 Swaad is a modern, full-featured web application for a catering service, built with the MERN stack (MongoDB, Express, React, Node.js). It provides a seamless and intuitive user experience, allowing customers to browse menus, customize orders, and book catering services for their events.
 
