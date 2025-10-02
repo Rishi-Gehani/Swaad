@@ -6,7 +6,7 @@ Swaad is a modern, full-featured web application for a catering service, built w
 
 ---
 
-## ##  Features
+##   Features
 
 This application is packed with features designed to provide a complete and professional user journey.
 
@@ -28,7 +28,7 @@ This application is packed with features designed to provide a complete and prof
 
 ---
 
-## ##  Tech Stack
+##   Tech Stack
 
 * **Frontend:** React, React Router, React Context API, Font Awesome
 * **Backend:** Node.js, Express.js
@@ -36,7 +36,7 @@ This application is packed with features designed to provide a complete and prof
 
 ---
 
-## ##  Getting Started
+##   Getting Started
 
 To get a local copy up and running, follow these simple steps.
 
@@ -80,7 +80,7 @@ To get a local copy up and running, follow these simple steps.
 
 ---
 
-## ## 📖 How It Works (User Flow)
+##  How It Works (User Flow)
 
 1.  **Browse:** A user lands on the homepage and can explore the various pages like Services and About.
 2.  **Select Menu:** The user navigates to the Menu page, chooses a cuisine (e.g., Gujarati), and browses the items.
@@ -94,21 +94,21 @@ To get a local copy up and running, follow these simple steps.
 
 ---
 
-## ##  Contributing
+##   Contributing
 
 Contributions, issues, and feature requests are welcome. Feel free to check the issues page if you want to contribute.
 
 ---
 
-## ##  License
+##   License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 
-## ##  Contact
+##   Contact
 
 Rishi Gehani - rishigehani18@gmail.com
 Sohan Thakur - sohant444@gmail.com
 
-Project Link: [https://github.com/your-username/your-repo-name](https://github.com/Rishi-Gehani/Swaad)
+Project Link: [https://github.com/Rishi-Gehani/Swaad]
