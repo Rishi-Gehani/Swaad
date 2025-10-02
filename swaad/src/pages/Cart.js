@@ -119,6 +119,7 @@ const Cart = () => {
     );
   }
 
+
   return (
     <div className="cart-page">
       <Login isOpen={isLoginModalOpen} onClose={() => setLoginModalOpen(false)} />
