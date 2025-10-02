@@ -114,9 +114,9 @@ body {
 
 /* Hero Section Styles */
 .hero {
-  /* background: url('https://images.pexels.com/photos/678414/pexels-photo-678414.jpeg') no-repeat center center/cover; */
+  background: url('https://images.pexels.com/photos/678414/pexels-photo-678414.jpeg') no-repeat center center/cover;
    /* background: url('https://v1.pinimg.com/videos/mc/720p/4d/04/58/4d0458956d0a17e86b325c9f329ab64e.mp4') no-repeat center center/cover; */
-  background: url('https://i.pinimg.com/1200x/4a/56/44/4a5644767f409f6b98f0dfa353482dda.jpg') no-repeat center center/cover;
+  /* background: url('https://i.pinimg.com/1200x/4a/56/44/4a5644767f409f6b98f0dfa353482dda.jpg') no-repeat center center/cover; */
   padding: 180px 20px;
   text-align: left;
   position: relative;
