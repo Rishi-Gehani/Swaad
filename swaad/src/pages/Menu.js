@@ -69,11 +69,11 @@ const menuData = {
       
     },
     packages: [
-      { id: 42, name: 'Swaad-e-Sohan Thali', price: 1314, description: 'Dal Pakwan(x1) , Sana Bhajiya(x1) , Onion Koki(x2) , Tea/Coffee(x1) | 1 Tray = 10 Serves', image: 'https://via.placeholder.com/150' },
-      { id: 43, name: 'Sindhi Thali 2', price: 1297, description: 'Dal Pakwan(x1) , Mirchi Bhajiya(x2) , Besan Koki(x2) , Tea/Coffee(x1) | 1 Tray = 10 Serves',  image: 'https://via.placeholder.com/150' },
-      { id: 44, name: 'Sindhi Thali 3', price: 6434, description: 'Jeera Rice , Spl. Sindhi Kadhi(Besan) , Butter Roti(x2) , Palak Paneer, Aalo Bhindi , Singhar Mithai(x2) , Boondi Raita(x1) | 1 Tray = 10 Serves',  image: 'https://via.placeholder.com/150' },
-      { id: 45, name: 'Sindhi Thali 4', price: 6370, description: 'Spl. Sindhi Tairi , Sai Bhaji , Butter Garlic Naan(x2), Paneer Butter  Masala , Masala Beeh , Spl. Sindhi Lola(x2) , Masala Papad| 1 Tray = 10 Serves',  image: 'https://via.placeholder.com/150' },
-      { id: 46, name: 'Sindhi Thali 5', price: 6314, description: 'Spl. Sindhi Bhuga Chawal , Chana Masala , Spl. Sindhi Doda(x2) , Paneer Bhurji , Aalo Baigan , Moong dal Halwa(x1) , Boondi Raita(x1) | 1 Tray = 10 Serves' ,image: 'https://via.placeholder.com/150' },
+      { id: 42, name: 'Swaad-e-Sohan Thali', price: 1314, description: 'Dal Pakwan(x1) , Sana Bhajiya(x1) , Onion Koki(x2) , Tea/Coffee(x1) | 1 Tray = 10 Serves', image: 'https://i.pinimg.com/1200x/37/d4/65/37d46597dbe413c55328647cb85a5e83.jpg' },
+      { id: 43, name: 'Rishit ka Zaika Jalwa', price: 1297, description: 'Dal Pakwan(x1) , Mirchi Bhajiya(x2) , Besan Koki(x2) , Tea/Coffee(x1) | 1 Tray = 10 Serves',  image: 'https://images.immediate.co.uk/production/volatile/sites/2/2022/12/Sindhi-dhal-pakwan-65b6f64.jpg?quality=90&resize=708,643' },
+      { id: 44, name: 'Sindhi Thali 2', price: 6434, description: 'Jeera Rice , Spl. Sindhi Kadhi(Besan) , Butter Roti(x2) , Palak Paneer, Aalo Bhindi , Singhar Mithai(x2) , Boondi Raita(x1) | 1 Tray = 10 Serves',  image: 'https://i.pinimg.com/736x/be/c7/6f/bec76fbbc99c15db930e8128b8ca13e6.jpg' },
+      { id: 45, name: 'Sindhi Thali 3', price: 6370, description: 'Spl. Sindhi Tairi , Sai Bhaji , Butter Garlic Naan(x2), Paneer Butter  Masala , Masala Beeh , Spl. Sindhi Lola(x2) , Masala Papad| 1 Tray = 10 Serves',  image: 'https://images.pexels.com/photos/5775684/pexels-photo-5775684.jpeg' },
+      { id: 46, name: 'Sindhi Thali 4', price: 6314, description: 'Spl. Sindhi Bhuga Chawal , Chana Masala , Spl. Sindhi Doda(x2) , Paneer Bhurji , Aalo Baigan , Moong dal Halwa(x1) , Boondi Raita(x1) | 1 Tray = 10 Serves' ,image: 'https://i.pinimg.com/1200x/37/4f/97/374f975f1a232625ef1f8114badb6b80.jpg' },
 
     ],
   },
@@ -141,11 +141,11 @@ const menuData = {
       ],
     },
     packages: [
-        { id: 71, name: 'Gujarati Combo 1', price: 1101, description: 'Khaman , Patra , Fafda , Jalebi , Tea/Coffee | 1 Tray = 10 Serves ', image: 'https://via.placeholder.com/150' },
-        { id: 72, name: 'Spl.Taste-e-Tanvi Thali', price: 1101, description: 'Dhokla , Khandvi , Fafda Jalebi , Tea/Coffee | 1 Tray = 10 Serves ', image: 'https://via.placeholder.com/150' },
-        { id: 73, name: 'Gujarati Combo 3', price: 4075, description: 'Spl. Gujarati Masala Khichdi , Ringan Nu Olo , Roomali Roti(x2) , Undhiyu , Kesar Basundi(x1), Masala Chaas(x1) | 1 Tray = 10 Serves ', image: 'https://via.placeholder.com/150' },
-        { id: 74, name: 'Gujarati Combo 4', price: 5482, description: 'Peas Pulao , Dal Takda , Vaal Nu Saak , Thepla(x2) , Barela Bhindi , Laapsi , Boondi Raita(x1) | 1 Tray = 10 Serves ', image: 'https://via.placeholder.com/150' },
-        { id: 75, name: 'Spl.Jashn-e-Jasleen Thali', price: 4955, description: 'Biryani , Sev Tameta , Butter Garlic Naan(x2) , Mix Veg , Rabdi , Masala Chaas(x1) | 1 Tray = 10 Serves ', image: 'https://via.placeholder.com/150' },
+        { id: 71, name: 'Spl.Full On Heet Feast Thali', price: 1101, description: 'Khaman , Patra , Fafda , Jalebi , Tea/Coffee | 1 Tray = 10 Serves ', image: 'https://i.pinimg.com/1200x/6c/e6/e2/6ce6e21e0f67d015f6863907d7e87c56.jpg' },
+        { id: 72, name: 'Spl.Jashn-e-Jasleen Thali', price: 1101, description: 'Dhokla , Khandvi , Fafda Jalebi , Tea/Coffee | 1 Tray = 10 Serves ', image: 'https://i.pinimg.com/1200x/c8/1a/ac/c81aac38467e652c2c611e4f6248aedf.jpg' },
+        { id: 73, name: 'Ruchi ki Rasoi Rangilo', price: 4075, description: 'Spl. Gujarati Masala Khichdi , Ringan Nu Olo , Roomali Roti(x2) , Undhiyu , Kesar Basundi(x1), Masala Chaas(x1) | 1 Tray = 10 Serves ', image: 'https://i.pinimg.com/1200x/d4/6a/7e/d46a7e9f0fc95c469eb2aa12d49fea6d.jpg' },
+        { id: 74, name: 'Gujarati Combo 2', price: 5482, description: 'Peas Pulao , Dal Takda , Vaal Nu Saak , Thepla(x2) , Barela Bhindi , Laapsi , Boondi Raita(x1) | 1 Tray = 10 Serves ', image: 'https://i.pinimg.com/736x/fb/91/36/fb9136b7267fc5ec11758b125d7671b7.jpg' },
+        { id: 75, name: 'Gujarati Combo 3', price: 4955, description: 'Biryani , Sev Tameta , Butter Garlic Naan(x2) , Mix Veg , Rabdi , Masala Chaas(x1) | 1 Tray = 10 Serves ', image: 'https://images.pexels.com/photos/5775684/pexels-photo-5775684.jpeg' },
 
     ],
 
@@ -213,11 +213,11 @@ const menuData = {
       ],
     },
     packages: [
-        { id: 97, name: 'Marathi Tiffin 1 ', price: 1314, description: 'Misal Pav, Puran Poli, Batata Vada , Tea/Coffee | 1 Tray = 10 Serves', image: 'https://via.placeholder.com/150' },
-        { id: 98, name: 'Spl.Full On Heet Feast Thali', price: 1059, description: 'Misal Pav, Kandha Poha, Sabudana , Tea/Coffee| 1 Tray = Serves', image: 'https://via.placeholder.com/150' },
-        { id: 99, name: 'Marathi Tiffin 3', price: 4915, description: 'Jeera Rice , Bharli Vangi , Bhakri(Jawari)(x2) , Methi Chi Patal , Modak(x5) , Masala Papad(x1) | 1 Tray = Serves ', image: 'https://via.placeholder.com/150' },
-        { id: 100, name: 'Spl.Janhavi Zaayka Thali ', price: 4475, description: 'Jeera Rice , Dal Takda , Sev Bhaji , Bhakri(Rice)(x2) , Paneer Burji , Gajar Halwa(x1) , Boondi Raita(x1) | 1 Tray = Serves', image: 'https://via.placeholder.com/150' },
-        { id: 101, name: 'Marathi Tiffin 5', price: 7394, description: 'Jeera Rice , Pitla , Thaalipeeth(x2) , Aalo chi Bhaji , Chana Masala , Shrikhand(x1) , Masala Chaas(x1) | 1 Tray = Serves', image: 'https://via.placeholder.com/150' },
+        { id: 97, name: 'Spl.Janhavi Zaayka Thali ', price: 1314, description: 'Misal Pav, Puran Poli, Batata Vada , Tea/Coffee | 1 Tray = 10 Serves', image: 'https://i.pinimg.com/1200x/e4/43/ff/e443ffd83569b11fcf35e3e0d93efe3c.jpg' },
+        { id: 98, name: 'Spl.Taste-e-Tanvi Thali', price: 1059, description: 'Misal Pav, Kandha Poha, Sabudana , Tea/Coffee| 1 Tray = Serves', image: 'https://i.pinimg.com/1200x/57/f9/22/57f92279c050bdbe0275174df2d7bbe2.jpg' },
+        { id: 99, name: 'Marathi Tiffin 1', price: 4915, description: 'Jeera Rice , Bharli Vangi , Bhakri(Jawari)(x2) , Methi Chi Patal , Modak(x5) , Masala Papad(x1) | 1 Tray = Serves ', image: 'https://i.pinimg.com/1200x/5a/9b/8a/5a9b8a4f49ab9529a72b50fa2092978e.jpg' },
+        { id: 100, name: 'Marathi Tiffin 2', price: 4475, description: 'Jeera Rice , Dal Takda , Sev Bhaji , Bhakri(Rice)(x2) , Paneer Burji , Gajar Halwa(x1) , Boondi Raita(x1) | 1 Tray = Serves', image: 'https://i.pinimg.com/736x/57/be/f8/57bef8263140b6aef13a196bd09ff99e.jpg' },
+        { id: 101, name: 'Marathi Tiffin 3', price: 7394, description: 'Jeera Rice , Pitla , Thaalipeeth(x2) , Aalo chi Bhaji , Chana Masala , Shrikhand(x1) , Masala Chaas(x1) | 1 Tray = Serves', image: 'https://i.pinimg.com/1200x/6b/b9/bc/6bb9bc070dfe2c4b6e9e9ea4aa79e4ef.jpg' },
       ],
   },
 };
