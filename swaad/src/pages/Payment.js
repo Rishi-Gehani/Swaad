@@ -8,7 +8,7 @@ import { faLock } from '@fortawesome/free-solid-svg-icons';
 
 const Payment = () => {
   const { cartItems, totalPrice, taxes, grandTotal, clearCart } = useCart();
-  const { addOrder } = useAuth();
+  const { user } = useAuth(); // ✅ get logged-in user
   const navigate = useNavigate();
 
   const [cardDetails, setCardDetails] = useState({
@@ -22,15 +22,38 @@ const Payment = () => {
     setCardDetails({ ...cardDetails, [e.target.name]: e.target.value });
   };
 
-  const handlePay = (e) => {
+  const handlePay = async (e) => {
     e.preventDefault();
-    const orderDetails = {
+
+    if (!user?.email) {
+      alert("Please login before placing order");
+      return;
+    }
+
+    const orderData = {
+      userEmail: user.email,
       items: cartItems,
-      total: grandTotal, 
+      total: grandTotal,
+      date: new Date().toISOString(),
     };
-    addOrder(orderDetails);
-    clearCart();
-    navigate('/confirmation');
+
+    try {
+      const response = await fetch("http://localhost:5000/orders", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(orderData),
+      });
+
+      if (response.ok) {
+        console.log("✅ Order saved to MongoDB!");
+        clearCart();
+        navigate('/Confirmation');
+      } else {
+        console.error("❌ Failed to save order");
+      }
+    } catch (err) {
+      console.error("Error:", err);
+    }
   };
 
   return (
@@ -76,10 +99,10 @@ const Payment = () => {
           <h3>Order Summary</h3>
           <div className="summary-items-list">
             {cartItems.map(item => (
-                <div key={item.id} className="summary-item">
-                    <span>{item.name} (x{item.quantity})</span>
-                    <span>₹{(item.price * item.quantity).toFixed(2)}</span>
-                </div>
+              <div key={item.id} className="summary-item">
+                <span>{item.name} (x{item.quantity})</span>
+                <span>₹{(item.price * item.quantity).toFixed(2)}</span>
+              </div>
             ))}
           </div>
           <hr/>
