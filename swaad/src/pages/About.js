@@ -14,8 +14,6 @@ const About = () => {
   const founders = [
     { name: 'Sohan Thakur', image: '/Sohan.jpg', description: 'With a passion for food and a vision for service, Sohan founded Catering to bring joy to events.' },
     { name: 'Rishi Gehani', image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=387&q=80', description: 'Rishi’s expertise in management and logistics ensures every event is a seamless success.' },
-    // { name: 'Sohan Thakur', image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=387&q=80', description: 'Jane’s expertise in management and logistics ensures every event is a seamless success.' },
-
   ];
 
   return (
