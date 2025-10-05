@@ -2,17 +2,17 @@ import React from 'react';
 
 const About = () => {
   const chefs = [
-    { name: 'Rishit', image: 'https://akm-img-a-in.tosshub.com/aajtak/images/photo_gallery/202105/ayyar6.jpg', description: 'Head Chef with 20 years of experience in South Indian cuisine.' },
-    { name: 'Heet', image: 'https://staticimg.amarujala.com/assets/images/2018/07/09/hf_1531124344.jpeg?q=80&w=480&dpr=2.6', description: 'Chef known for his creative and delicious desserts.' },
-    { name: 'Janhavi', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScYkgRTBuFwaa69aTN5RRdscJZvgZa4J_6RQ&s', description: 'Specialist in Maharashtrain fusion and vibrant culinary creations.' },
-    { name: 'Jasleen', image: 'https://dy3rma73kowlp.cloudfront.net/uploads/2024/01/sodhi.webp', description: 'Expert in farm-to-table and organic meal preparation.' },
-    { name: 'Ruchi', image: 'https://images.news18.com/ibnlive/uploads/2024/02/dayaben-1-2024-02-e842139c0c8e119c47f6612426c6ba92-16x9.jpg', description: 'Skilled chef delivering traditional Gujarati delicacies with perfection and flair.' },
-    { name: 'Tanvi', image: 'https://feeds.abplive.com/onecms/images/uploaded-images/2021/12/29/5f335d9841b127e990aadb2c0eb5152a_original.jpg?impolicy=abp_cdn&imwidth=1200', description: 'Sous Chef ensuring every dish meets our highest standards.' },
+    { name: 'Rishit', image: 'https://images.pexels.com/photos/3814446/pexels-photo-3814446.jpeg', description: 'Head Chef with 20 years of experience in South Indian cuisine.' },
+    { name: 'Heet', image: 'https://images.unsplash.com/photo-1577219491135-ce391730fb2c?q=80&w=677&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', description: 'Chef known for his creative and delicious desserts.' },
+    { name: 'Janhavi', image: 'https://images.pexels.com/photos/3769999/pexels-photo-3769999.jpeg', description: 'Specialist in Maharashtrain fusion and vibrant culinary creations.' },
+    { name: 'Jasleen', image: 'https://images.pexels.com/photos/6578891/pexels-photo-6578891.jpeg', description: 'Expert in farm-to-table and organic meal preparation.' },
+    { name: 'Ruchi', image: 'https://images.unsplash.com/photo-1659354219212-b9ec7231ec6a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNoZWZzJTIwZ2lybHxlbnwwfHwwfHx8MA%3D%3D', description: 'Skilled chef delivering traditional Gujarati delicacies with perfection and flair.' },
+    { name: 'Tanvi', image: 'https://images.unsplash.com/photo-1659354218682-86007e49d844?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGNoZWZzJTIwZ2lybHxlbnwwfHwwfHx8MA%3D%3D', description: 'Sous Chef ensuring every dish meets our highest standards.' },
   ];
 
   const founders = [
     { name: 'Sohan Thakur', image: '/Sohan.jpg', description: 'With a passion for food and a vision for service, Sohan founded Catering to bring joy to events.' },
-    { name: 'Rishi Gehani', image: '/Rishi1.jpg', description: 'Rishi’s expertise in management and logistics ensures every event is a seamless success.' },
+    { name: 'Rishi Gehani', image: '/Rishi.png', description: 'Rishi’s expertise in management and logistics ensures every event is a seamless success.' },
   ];
 
   return (
