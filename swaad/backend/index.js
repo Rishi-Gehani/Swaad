@@ -5,7 +5,9 @@ const cors = require("cors");
 const app = express();
 
 app.use(express.json());
-app.use(cors({ origin: 'http://localhost:3000' }));
+app.use(cors({ origin: 'https://swaad.vercel.app/',
+    optionsSuccessStatus: 200
+ }));
 
 // MongoDB connection
 mongoose.connect('mongodb+srv://rishigehani_db_user:ihji7984@cluster0.iz7ebsz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
