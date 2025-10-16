@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(cors({ origin: 'http://localhost:3000' }));
 
 // MongoDB connection
-mongoose.connect('mongodb://localhost:27017/Swaad_Database', {
+mongoose.connect('mongodb+srv://rishigehani_db_user:ihji7984@cluster0.iz7ebsz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => {
