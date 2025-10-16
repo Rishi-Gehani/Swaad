@@ -17,9 +17,9 @@ const Login = ({ isOpen, onClose }) => {
     setMessage(''); 
 
     try {
-      const url = isLoginView
-        ? 'http://localhost:5000/login'
-        : 'http://localhost:5000/signup';
+     const url = isLoginView
+      ? `${process.env.REACT_APP_API_URL}/login`
+      : `${process.env.REACT_APP_API_URL}/signup`;
 
       const bodyData = isLoginView
         ? { email, password }
