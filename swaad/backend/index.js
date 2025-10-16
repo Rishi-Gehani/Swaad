@@ -1,16 +1,25 @@
 const mongoose = require('mongoose');
 const express = require('express');
 const cors = require("cors");
+require('dotenv').config();
 
 const app = express();
 
+const whitelist = ['http://localhost:3000', 'https://swaad.vercel.app'];
+const corsOptions = {
+  origin: function (origin, callback) {
+    if (whitelist.indexOf(origin) !== -1 || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  }
+};
+app.use(cors(corsOptions));
 app.use(express.json());
-app.use(cors({ origin: 'https://swaad.vercel.app/',
-    optionsSuccessStatus: 200
- }));
 
 // MongoDB connection
-mongoose.connect('mongodb+srv://rishigehani_db_user:ihji7984@cluster0.iz7ebsz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
+mongoose.connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => {
@@ -18,7 +27,6 @@ mongoose.connect('mongodb+srv://rishigehani_db_user:ihji7984@cluster0.iz7ebsz.mo
 }).catch((err) => {
     console.log('Error connecting to database', err);
 });
-
 // Schemas
 const ContactSchema = new mongoose.Schema({
     name: String,
